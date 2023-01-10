@@ -1,0 +1,114 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+b {
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    color: hsl(200, 16%, 50%);
+}
+
+
+
+.container {
+    width: 30vw;
+    height: 80vh;
+
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.title {
+    margin-bottom: 1%;
+}
+
+.congrats {
+    width: 70%;
+    margin: auto;
+}
+
+.well {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .75em;
+}
+
+.plan {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.spacer {
+    flex-basis: 20%;
+}
+
+.change {
+    color:hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: auto;
+    height: 7%;
+    width: 80%;
+    border-radius: 20px;
+    border: 0;
+    font-size: .75em;
+    cursor: pointer;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    filter: drop-shadow(0 10px 10px gray);
+}
+
+.proceed:hover {
+    animation: enlarge .25s ease-in-out 1;
+}
+
+.retreat {
+    background-color: white;
+    color: hsl(200, 16%, 50%);
+}
+
+@keyframes enlarge{
+    0% {
+        width: 80%;
+        height: 7%;
+    }
+    100% {
+        width: 82%;
+        height: 9%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 80vw;
+        font-size: 2.5vh;
+    }
+
+}
